@@ -1,0 +1,37 @@
+export const data = {
+  products: [
+    {
+      name: 'blue flare jeans',
+      id: Math.random(),
+      category: 'jeans',
+      image: '/images/image3.jpg',
+      price: 119,
+      quantity: 50,
+      rating: 4,
+      numReviews: 10,
+      description: 'high rise blue flare jeans',
+    },
+    {
+      name: 'white shirt',
+      id: Math.random(),
+      category: 'shirts',
+      image: '/images/image1.webp',
+      price: 89,
+      quantity: 30,
+      rating: 4.5,
+      numReviews: 10,
+      description: 'classy white shirt',
+    },
+    {
+      name: 'white dress',
+      id: Math.random(),
+      category: 'dresses',
+      image: '/images/images2.webp',
+      price: 120,
+      quantity: 30,
+      rating: 4.5,
+      numReviews: 10,
+      description: 'aesthetic white dress',
+    },
+  ],
+};
