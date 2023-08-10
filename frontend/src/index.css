@@ -77,14 +77,75 @@ main {
   margin-left: 120px;
 }
 .editing {
-  color: #555;
-  font-weight: 650;
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  opacity: 75%;
+  font-size: larger;
+  text-transform: capitalize;
+  &:hover {
+    color: black;
+    opacity: 100%;
+  }
+}
+.edditting {
+  margin: 16px;
+}
+.editing::before {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  border-bottom: black solid;
+  bottom: -0.5px;
+  transition: width 0.3s;
+}
+.editing:hover:before {
+  width: 25px;
+}
+.go {
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  opacity: 99%;
+}
+.basket {
+  margin: 20px 150px;
+}
+.navcollect {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.side__bar {
+  padding: 23px;
+}
+.theCategory {
+  text-transform: capitalize;
+}
+.goshop {
+  color: #484646;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+  border: black solid 1px;
+  padding: 10px;
+  margin-left: 5px;
+  border-radius: 8em;
+  text-align: center;
+}
+.goshop:hover {
+  text-decoration: underline;
+  color: #fff;
+  background: black;
 }
 .details {
   padding: 1rem;
 }
 .img-large {
-  max-width: 50%;
+  max-width: 100%;
+  height: 70%;
+  margin-left: 120px;
 }
 .img-thumbnail {
   height: 80px;
@@ -148,6 +209,7 @@ main {
   margin-top: 1.5%;
   margin-left: 3%;
 }
+
 .footer {
   margin: 100px 200px 20px 200px;
   .top {
@@ -191,6 +253,18 @@ main {
     }
   }
 }
+
+.jsut {
+  font-size: xx-large;
+  transition: 0.3s;
+  transition: transform 2s;
+  text-transform: capitalize;
+}
+.jsut:hover {
+  text-decoration: underline 2px;
+  color: #989898;
+  transform: translateY(-10px);
+}
 .slider {
   height: calc(100vh - 50px);
   width: 100vw;
@@ -223,7 +297,7 @@ main {
 }
 .sliderImg {
   width: 100vw;
-  height: 100%;
+  height: 700px;
   object-fit: cover;
 }
 .featuredProducts {
@@ -278,6 +352,7 @@ main {
     font-size: 16px;
     font-weight: 550;
     text-align: center;
+    text-transform: capitalize;
   }
 }
 .categories {
@@ -305,7 +380,25 @@ main {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      max-width: 800px;
+      width: 800px;
     }
   }
+}
+
+.userTitle {
+  text-align: center;
+  padding: 20px;
+  text-transform: capitalize;
+}
+.userCard {
+  width: 100%;
+  text-transform: capitalize;
+}
+.editProfileButton {
+  text-align: center;
+  height: 10px;
+}
+.editProfileButton Button {
+  text-transform: capitalize;
+  font-weight: 600;
 }

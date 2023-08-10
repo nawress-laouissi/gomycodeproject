@@ -16,9 +16,9 @@ function ProfilePage() {
   };
   return (
     <div className="container sign-container">
-      <h1> user Profile </h1>
+      <h1 className="userTitle"> user Profile </h1>
 
-      <Card className="mb-3 ">
+      <Card className="mb-3  userCard">
         <Card.Body>
           <ListGroup variant="flush">
             <ListGroup.Item>
@@ -62,7 +62,7 @@ function ProfilePage() {
               </Row>
             </ListGroup.Item>
             <ListGroup.Item>
-              <div className="mb-3 ">
+              <div className="mb-3  editProfileButton ">
                 <Button variant="dark" onClick={goedHandler}>
                   {' '}
                   edit Profile

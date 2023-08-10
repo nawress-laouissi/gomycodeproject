@@ -33,14 +33,14 @@ function GridSection() {
           <div className="col coli">
             <div className="row">
               <img
-                className="img"
+                className="img "
                 src="https://i.pinimg.com/564x/e5/8e/d8/e58ed814901bd8d705fb26a009a6f2f7.jpg"
                 alt=""
               ></img>
             </div>
           </div>
           <div className="col coli">
-            <div className="row">
+            <div className="row ">
               <img
                 className="img"
                 src="https://i.pinimg.com/564x/1d/6d/38/1d6d384a94786af35cffe0db86e103d6.jpg"
@@ -49,7 +49,7 @@ function GridSection() {
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row ">
           <img
             className="img"
             src="https://i.pinimg.com/564x/1b/33/88/1b33884a18d6971b47d95c28386e1496.jpg"

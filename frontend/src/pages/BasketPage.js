@@ -32,16 +32,20 @@ export default function BasketPage() {
     navigate('/signin?redirect=/shipping');
   };
   return (
-    <div>
+    <div className="basket">
       <div>
         <div>
           <title> Shopping Basket</title>
           <Row>
             <Col md={8}>
               {cartsItems.length === 0 ? (
-                <p>
+                <p className="go">
                   {' '}
-                  your basket is empty.<Link to="/clothes"> Go shopping</Link>
+                  your basket is empty.
+                  <Link to="/clothes" className="goshop">
+                    {' '}
+                    GO SHOPPING
+                  </Link>
                 </p>
               ) : (
                 <ListGroup>

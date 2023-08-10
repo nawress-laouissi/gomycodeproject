@@ -130,7 +130,7 @@ function PlaceOrder() {
                     </ListGroup.Item>
                   ))}
                 </ListGroup>
-                <Link to="/basket" className="editing">
+                <Link to="/basket" className="editing edditting">
                   {' '}
                   edit
                 </Link>

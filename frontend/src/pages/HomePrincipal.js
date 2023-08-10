@@ -9,6 +9,7 @@ function HomePrincipal() {
       <Slider />
       <FeaturedProducts type="featured" />
       <GridSection />
+
       <FeaturedProducts type="trending" />
     </div>
   );

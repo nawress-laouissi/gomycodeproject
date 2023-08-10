@@ -79,7 +79,6 @@ function ProductPage() {
           <Row>
             <Col md={4}>
               <img
-                style={{ justifyContent: 'end' }}
                 className="img-large"
                 src={product.image}
                 alt={product.name}

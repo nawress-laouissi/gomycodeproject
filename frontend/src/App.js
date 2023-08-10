@@ -11,7 +11,7 @@ import { Store } from './Store';
 import BasketPage from './pages/BasketPage';
 import SigninPage from './pages/SigninPage';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ShippingAdressPage from './pages/ShippingAdressPage';
 import SignupPage from './pages/SignupPage';
@@ -54,7 +54,7 @@ function App() {
         setCategories(data);
         console.log(data);
       } catch (error) {
-        toast.error(error.message);
+        // toast.error(error.message);
       }
     };
     fetchCategories();
@@ -84,8 +84,8 @@ function App() {
 
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
-                <Link to="/clothes" className=" colorful">
-                  our clothes
+                <Link to="/clothes" className=" colorful flexing">
+                  our collection
                 </Link>
                 <SearchBox className="searching" />
                 <Nav className="me-auto w-100  justify-content-end ">
@@ -156,21 +156,24 @@ function App() {
                 : 'side-navbar d-flex justify-content-between flex-wrap flex-column'
             }
           >
-            <Nav className="flex-column text-white w-100 ">
+            <Nav className="flex-column text-white w-100 side__bar ">
               <Nav.Item>
                 <strong> Categories</strong>
               </Nav.Item>
               <Nav.Item>
-                <Link to="/clothes" className="nav-link color text-white">
+                <Link
+                  to="/clothes"
+                  className="nav-link color text-white navcollect"
+                >
                   {' '}
-                  Our clothes{' '}
+                  Our collection{' '}
                 </Link>
               </Nav.Item>
               {Object.values(categories).map((category) => (
                 <Nav.Item key={category}>
                   {' '}
                   <LinkContainer
-                    className="nav-link color text-white"
+                    className="nav-link color text-white theCategory"
                     to={{
                       pathname: '/search',
                       search: `?category=${category}`,
